@@ -1,20 +1,32 @@
 # ACF
-gf   - get_field('field_name');
-gfo  - get_field('field_name', 'option');
-gsf  - get_sub_field('field_name');
-gsfo - get_sub_field('field_name', 'option');
-tf   - <?php the_field('field_name'); ?>
-tfo  - <?php the_field('field_name', 'option'); ?>
-tsf  - <?php the_sub_field('field_name'); ?>
-tsfo - <?php the_sub_field('field_name', 'option'); ?>
+__gf__   - get_field('field_name');
+
+__gfo__  - get_field('field_name', 'option');
+
+__gsf__  - get_sub_field('field_name');
+
+__gsfo__ - get_sub_field('field_name', 'option');
+
+__tf__   - <?php the_field('field_name'); ?>
+
+__tfo__  - <?php the_field('field_name', 'option'); ?>
+
+__tsf__  - <?php the_sub_field('field_name'); ?>
+
+__tsfo__ - <?php the_sub_field('field_name', 'option'); ?>
 
 # jQuery
-c  - console.log(this);
-q  - $('selector')
-cl - $('selector').click(function() {});
+__c__  - console.log(this);
+
+__q__  - $('selector')
+
+__cl__ - $('selector').click(function() {});
 
 # CSS
-ctr - transition
-tfx - transform x -50%
-tfy - transform y -50%
-tfc - transform x -50% y -50%
+__ctr__ - transition
+
+__tfx__ - transform x -50%
+
+__tfy__ - transform y -50%
+
+__tfc__ - transform x -50% y -50%
