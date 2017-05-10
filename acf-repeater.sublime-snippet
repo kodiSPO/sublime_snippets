@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<?php if (have_rows('${1:repeater_field_name}')) : ?>
+	<div class="${2:row}">
+		<?php while ( have_rows('${1:repeater_field_name}') ) : the_row(); ?>
+
+			<div class="columns large-${3:6}">
+				${4}
+			</div>
+
+		<?php endwhile; ?>
+	</div>
+<?php endif; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rep</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html,source.php</scope>
+</snippet>
