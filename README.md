@@ -7,13 +7,13 @@ __gsf__  - get_sub_field('field_name');
 
 __gsfo__ - get_sub_field('field_name', 'option');
 
-__tf__   - <?php the_field('field_name'); ?>
+__tf__   - the_field('field_name');
 
-__tfo__  - <?php the_field('field_name', 'option'); ?>
+__tfo__  - the_field('field_name', 'option');
 
-__tsf__  - <?php the_sub_field('field_name'); ?>
+__tsf__  - the_sub_field('field_name');
 
-__tsfo__ - <?php the_sub_field('field_name', 'option'); ?>
+__tsfo__ - the_sub_field('field_name', 'option');
 
 # jQuery
 __c__  - console.log(this);
