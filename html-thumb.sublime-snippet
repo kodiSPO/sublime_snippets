@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+<?php if (has_post_thumbnail(get_the_ID())) : ?>
+	${1:<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=" 
+		 data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'small-540-360'); ?>"
+		 width="540" 
+		 height="360" 
+		 class="lazy">}
+	${2:<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'small-540-360'); ?>" 
+		 width="540" 
+		 height="360">}
+<?php endif; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>thumb</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html,source.php</scope>
+</snippet>
+
+
+

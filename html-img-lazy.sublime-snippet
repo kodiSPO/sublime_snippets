@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<?php if (\$img_src = get_field('${1:field_name}')) : ?>
+	<?php 
+	\$img_url    = \$img_src['url'];
+	\$img_width  = \$img_src['width'];
+	\$img_height = \$img_src['height'];
+	if (strpos(\$img_url, '@2x') !== false) {
+		\$img_width  = \$img_width / 2;
+		\$img_height = \$img_height / 2;
+	}
+	?>
+	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=" 
+		 data-src="<?php echo \$img_url; ?>" 
+		 width="<?php echo \$img_width; ?>" 
+		 height="<?php echo \$img_height; ?>" 
+		 class="lazy">
+<?php endif; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>imgl</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html,source.php</scope>
+</snippet>
+
+
