@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<div class="lazy" data-image="<?php echo get_field('${1:field_name}'); ?>">${2}</div>
+<div class="lazy" data-src="<?php echo get_field('${1:field_name}'); ?>">${2}</div>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>bgil</tabTrigger>
